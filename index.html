@@ -25,7 +25,25 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        
+        .worst-albums {
+            background-image: url('https://www.incimages.com/uploaded_files/image/1920x1080/getty_484825782_351130.jpg');
+            height:100vh;
+            width: 100%;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .worst-albums {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .worst-albums h1 {
+            margin-top: 50px;
+            font-size: 5rem;
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
@@ -41,22 +59,12 @@
               <a class="nav-link" href="#section1">My Favourite Album<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="#review-of-review">Review</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#worst-section">Worst Album</a>
             </li>
+           
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -126,36 +134,82 @@
     </section>
     <section class="review">
         <h1>Review of my favourite Album </h1>
-        <table class="table table-dark">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="https://i.ytimg.com/vi/BQ31l1gPGKM/maxresdefault.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">J Balvin - Ambiente</h5>
+                      <p class="card-text">Subscribe to J Balvin's channel <br>Listen to J Balvin’s Top Hits on your favorite streaming platform</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>  
+        </div>   
+        <table id="review-of-review" class="table table-dark">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Band</th>
+                <th scope="col">Title</th>
+                <th scope="col">Duration</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
               </tr>
               <tr>
                 <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
+                <td>text</td>
+                <td>text</td>
+                <td>text</td>
               </tr>
             </tbody>
           </table>
+    </section>
+    <section class="worst-albums" id="worst-section">
+        <h1 class="text-danger">Worst Album List </h1>
+        
+       <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="https://www.wikihow.com/images/thumb/1/11/Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg/v4-460px-Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Worst Album</h5>
+                  <p class="card-text">worst album ever</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="https://www.wikihow.com/images/thumb/1/11/Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg/v4-460px-Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Worst Album</h5>
+                  <p class="card-text">worst album ever</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card">
+                <img class="card-img-top" src="https://www.wikihow.com/images/thumb/1/11/Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg/v4-460px-Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg.webp" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Worst Album</h5>
+                  <p class="card-text">worst album ever</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>       
+       </div>   
     </section>
 
 </body>
